@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word Game</title>
+</head>
+
+<body style="text-align: center; margin-top:60px;">
+    <h1 style="margin-bottom:50px ;border-bottom: 2px solid black; display:inline-block; font-size: 50px;">Fun Game</h1>
+    <div id="main-div">
+        <div id="first-step">
+            <h1>write your vehicle name to cross the river (car, boat, cycle, bus)</h1>
+            <input id="first-vehicale" type="text" placeholder="write here">
+            <button onclick="letsGo()" >let's go</button>
+        </div>
+        <div id="second-step" style="display: none;">
+            <h1>Select a veahicale to move again</h1>
+            <button onclick="lost()">Bullock cart</button>
+            <button onclick="secondGo()">Horse carriage</button>
+        </div>
+        <div id="third-step" style="display: none;">
+            <div style="width: 30%; background-color: black; color: white; text-align: center; margin: auto;padding: 10px;">
+                <h1 style="margin-bottom:30px;"><span style="border: 2px solid white ; padding: 5px;">1236</span>       <span style="border: 2px solid white ; padding: 5px;">13345</span></h1>
+            </div>
+            <h1>enter the special number by adding the last tow numbers of the above given number</h1>
+            <input id="input-number" type="text" placeholder="enter the number">
+            <button onclick="finalStep()">lets go</button>
+        </div>
+        <div id="win" style="display: none;">
+            <h1>Here is your treasure</h1>
+            <img style="width: 20%;" src="treasure-chest.png">
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
